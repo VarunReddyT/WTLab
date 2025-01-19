@@ -1,0 +1,135 @@
+<!-- Design the food blog webpage using only HTML elements
+The webpage is divided into several sections 
+1. Hyper Link 1: "Welcome to My Food Blog" - This is the main title of the blog.
+2. Hyper Link 2: "About Me" - This section introduces the blog author. Place the content about the author.
+3. List 1: "Latest Posts" - This section lists the most recent blog posts.
+4. List 2: "Popular Recipes" - This section lists popular recipes with links.
+5. Hyper Link 3: "Contact Me" - This section provides a way for visitors to contact the author.
+6. Hyper Link 4: "Subscribe to My Blog" - This section includes a HTML form for visitors to subscribe to the blog.
+Requirements to implement
+1: Update Content
+Update the "Latest Posts" section by adding a new blog post titled "Healthy Salads for Every Day". Provide a brief description and a link to 
+"salad-recipes.html".`
+2: Add a New Section
+Add a new section titled "Upcoming Events" after the "Subscribe to My Blog" section. List at least two events with their descriptions.
+3: Create a Link
+Create a hyperlink in the "About Me" section that links to the homepage of the blog. Use the text "Back to Home".
+4: Update Form Elements
+Modify the subscription form so that the email field is required and includes basic validation for email format. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Blog</title>
+</head>
+
+<body>
+    <h1>Welcome to My Food Blog</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#latest-posts">Latest Posts</a></li>
+            <li><a href="#popular-recipes">Popular Recipes</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+    </nav>
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm the author of this blog. I love cooking and sharing my favorite recipes with the world.</p>
+        <p><a href="#">Back to Home</a></p>
+    </section>
+    <!-- Latest Posts Section -->
+    <section id="latest-posts">
+        <h2>Latest Posts</h2>
+        <ul>
+            <li>
+                <a href="salad-recipes.html">Healthy Salads for Every Day</a> - A collection of delicious and nutritious
+                salad recipes.
+            </li>
+            <li>
+                <a href="soup-recipes.html">Comforting Soups for Cold Days</a> - Warm up with these hearty soup recipes.
+            </li>
+            <li>
+                <a href="dessert-recipes.html">Sweet Treats to Savor</a> - Indulge in these delightful dessert recipes.
+            </li>
+        </ul>
+        <p><a href="#">Back to Home</a></p>
+    </section>
+    <!-- Popular Recipes Section -->
+    <section id="popular-recipes">
+        <h2>Popular Recipes</h2>
+        <ul>
+            <li><a href="#">Spaghetti Carbonara</a></li>
+            <li><a href="#">Chicken Rolls</a></li>
+            <li><a href="#">Vegetarian Tacos</a></li>
+        </ul>
+        <div>
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Spaghetti Carbonara">
+                <h4>RECIPE 1 : Spaghetti Carbonara</h4>
+                <p><strong>Description:</strong> A classic and custom recipe. Enjoy a creamy and delicious plate of
+                    carbonara that satisfies
+                    every craving.</p>
+                <a href="#">Link to Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe2.jpg" alt="Chicken Rolls">
+                <h4>RECIPE 2: Chicken Rolls</h4>
+                <p><strong>Description:</strong> A tasty and satisfying chicken recipe that’s perfect for every
+                    occasion.</p>
+                <a href="#">Link to Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe3.jpg" alt="Vegetarian Tacos">
+                <h4>RECIPE 3: Vegetarian Tacos</h4>
+                <p><strong>Description:</strong> A vibrant and healthy taco option for vegetarians and taco lovers
+                    alike.</p>
+                <a href="#">Link to Recipe</a>
+            </div>
+        </div>
+        <p><a href="#">Back to Home</a></p>
+    </section>
+    <!-- Contact Me Section -->
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or suggestions, feel free to reach out!</p>
+        <p><a href="#">Back to Home</a></p>
+    </section>
+    <!-- Subscribe to My Blog Section -->
+    <section id="contact-me">
+        <h2>Subscribe to My Blog</h2>
+        <form novalidate>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <br>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p><a href="#">Back to Home</a></p>
+    </section>
+    <!-- Upcoming Events Section (After Subscribe) -->
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>Cooking Workshop:</strong> Learn to bake desserts on January 15th.</li>
+            <li><strong>Live Q&A Session:</strong> Join me on February 10th to ask your cooking-related questions.</li>
+        </ul>
+        <p><a href="#">Back to Home</a></p>
+    </section>
+</body>
+
+</html>
