@@ -24,6 +24,6 @@ function startServer(port){
 
 rl.question("Enter the port number to run the server: ",(port)=>{
     const portNumber = parseInt(port,10);
-    startServer(port);
+    startServer(portNumber);
     rl.close();
 })
